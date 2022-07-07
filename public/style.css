@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(162, 99, 255) 13%,
+    rgba(245, 247, 251, 1) 49%,
+    rgba(255, 250, 209, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  position: relative;
+}
+
+.intro-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.title {
+  margin-top: 10%;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #293264;
+}
+
+.tag-line {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  color: #293264;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn {
+  cursor: pointer;
+  margin: 1.5rem 0 1.5rem -0.5rem;
+  padding: 0.7em 1.4em;
+  background: #4d5b9e;
+  border-radius: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f7fb;
+  transition: all 0.5s;
+}
+
+.start-btn:hover {
+  background: #293264;
+}
+
+.quiz-container {
+  max-width: 550px;
+  margin: 2.3rem auto;
+  padding: 0 1rem;
+}
+
+.question {
+  font-family: Karla;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #293264;
+  margin: 0.8rem 0;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.answer {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #293264;
+}
+
+.answer-btn {
+  cursor: pointer;
+  width: fit-content;
+  min-width: 4rem;
+  padding: 0.2rem 0.5rem 0.15rem 0.5rem;
+  border: 1px solid #4d5b9e;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #4d5b9e;
+}
+
+.check-answers-btn {
+  position: relative;
+  cursor: pointer;
+  padding: 0.4em 0.9em;
+  background: #4d5b9e;
+  border-radius: 0.7rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: #f5f7fb;
+}
+
+.game-results {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #293264;
+  margin: 0 1.4rem 0 0;
+  padding: 0.7rem 0 0 0;
+}
+
+.game-info {
+  margin: 1.4rem auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.underline {
+  border-bottom: 1px solid #dbdef0;
+  margin-top: 0.8rem;
+}
+
+form {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #293264;
+  display: grid;
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropdown {
+  width: 90%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 10px 8px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background: #fff;
+  margin: 0.25rem 0 0.75rem 0;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  border: 1px solid #293264;
+}
